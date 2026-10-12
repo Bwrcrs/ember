@@ -1,0 +1,24 @@
+# 构建产物
+*.exe
+*.o
+*.obj
+*.a
+
+# 编辑器 / 系统垃圾
+_*.tmp
+*.tmp
+*.bak
+*~
+Thumbs.db
+desktop.ini
+
+# 第三方测试 ROM：GPLv3，不提交。
+# 见 tests/external/README.md —— 那里记了下载地址和预期结果。
+# 注意 README.md 自己要被跟踪，所以先忽略整个目录再把它放回来。
+tests/external/*
+!tests/external/README.md
+
+# roms/ 是放游戏 ROM 的地方。CHIP-8 的游戏 ROM 绝大多数有版权
+# （商业游戏、别人写的游戏），和 tests/external/ 同一个道理，一律不提交。
+# 自己写的测试 ROM 属于回归测试，放 tests/run/。
+roms/
